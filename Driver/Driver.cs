@@ -94,11 +94,11 @@ namespace Driver
 
 
             //Declare a winner
-            if (strResults == "Player1")
+            if (strResults == "Player 1")
             {
                 Console.WriteLine("Player1 has won the game!");
             }
-            else if (strResults == "Player2")
+            else if (strResults == "Player 2")
             {
                 Console.WriteLine("Player2 has won the game!");
             }
