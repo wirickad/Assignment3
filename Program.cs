@@ -32,7 +32,7 @@ namespace Mission3group2_11
                 //Check to see if the position has already been taken
                 if (arrBoard[Player1Position] == Convert.ToString(Player1Position))
                 {
-                    arrBoard[Player1Position] = Char.ToString('O');
+                    arrBoard[Player1Position] = Char.ToString('X');
                 }
                 else
                 {
@@ -43,7 +43,7 @@ namespace Mission3group2_11
                         Player1Position = int.Parse(Console.ReadLine());
                     }
 
-                    arrBoard[Player1Position] = Char.ToString('O');
+                    arrBoard[Player1Position] = Char.ToString('X');
                 }
 
                 //Check to see if there is a winner and display the Board
