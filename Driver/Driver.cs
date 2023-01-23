@@ -19,6 +19,7 @@ namespace Driver
             int Player1Position = 0;
             int Player2Position = 0;
             string strResults = null;
+            int i = 0;
 
             Console.WriteLine("Welcome to the game, playa!");
             Support st = new Support();
@@ -47,13 +48,19 @@ namespace Driver
 
                     arrBoard[Player1Position] = Char.ToString('O');
                 }
-
+                i++;
                 //Check to see if there is a winner and display the Board
                 strResults = st.ReceiveBoard(arrBoard);
                 st.PrintBoard(arrBoard);
 
                 //Break out of the loop if there is a winner
                 if (strResults != null)
+                {
+                    break;
+                }
+
+                //Manually force a tie if 9 turns have been taken
+                if (i == 9)
                 {
                     break;
                 }
@@ -82,6 +89,7 @@ namespace Driver
                 //Check to see if there is a winner and display the Board
                 strResults = st.ReceiveBoard(arrBoard);
                 st.PrintBoard(arrBoard);
+                i++;
             }
 
 
