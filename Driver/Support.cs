@@ -75,17 +75,16 @@ namespace Driver
             {
                 winner = null;
             }
-            for (int i = 0; i < Board.Length; i++)
-            {
-                if (Board[i] != "X" || Board[i] != "O")
-                {
-                    Console.Write("kjlkj");
-                    winner = "Draw";
-                    return winner;
-                }
-            }
+            //for (int i = 0; i < Board.Length; i++)
+            //{
+            //    if (Board[i] != "X" || Board[i] != "O")
+            //    {
+            //        Console.Write("kjlkj");
+            //        winner = "Draw";
+            //        return winner;
+            //    }
+            //}
 
-            PrintBoard(Board);
             return winner;
                 
         }
