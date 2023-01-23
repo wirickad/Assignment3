@@ -101,7 +101,7 @@ namespace Mission3group2_11
             }
             else
             {
-                Console.WriteLine("The game has ended in a tie!");
+                Console.WriteLine("The game has ended in a tie.");
             }
         }
     }
