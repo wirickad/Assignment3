@@ -22,6 +22,13 @@ namespace Mission3group2_11
                 Console.WriteLine("\n" + "Player 1, enter a number (0-8) for where you want to place your X: ");
                 Player1Position = int.Parse(Console.ReadLine());
 
+                //Check for a valid entry
+                while (0 > Player1Position && Player1Position > 8)
+                {
+                    Console.WriteLine("\n" + "Invalid Entry. Please try again: ");
+                    Player1Position = int.Parse(Console.ReadLine());
+                }
+                
                 //Check to see if the position has already been taken
                 if (arrBoard[Player1Position] == Convert.ToString(Player1Position))
                 {
@@ -51,7 +58,14 @@ namespace Mission3group2_11
 
                 Console.WriteLine("\nPlayer 2, enter a number (0-8) for where you want to place your O: ");
                 Player2Position = int.Parse(Console.ReadLine());
-
+                
+                //Check for a valid entry
+                while (0 > Player2Position && Player2Position > 8)
+                {
+                    Console.WriteLine("\n" + "Invalid Entry. Please try again: ");
+                    Player2Position = int.Parse(Console.ReadLine());
+                }
+                
                 //Check to see if the position has already been taken
                 if (arrBoard[Player2Position] == Convert.ToString(Player2Position))
                 {
