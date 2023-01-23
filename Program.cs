@@ -13,7 +13,7 @@ namespace Mission3group2_11
             string strResults = null;
 
             Console.WriteLine("Welcome to the game, playa!");
-            //Support.PrintBoard(arrBoard);
+            Support.PrintBoard(arrBoard);
 
             //Loop through the game until there is a winner
             while (strResults == null)
@@ -47,8 +47,8 @@ namespace Mission3group2_11
                 }
 
                 //Check to see if there is a winner and display the Board
-                //strResults = Support.ReceiveBoard(arrBoard);
-                //Support.PrintBoard(arrBoard);
+                strResults = Support.ReceiveBoard(arrBoard);
+                Support.PrintBoard(arrBoard);
 
                 //Break out of the loop if there is a winner
                 if (strResults != null)
@@ -85,8 +85,8 @@ namespace Mission3group2_11
 
 
                 //Check to see if there is a winner and display the Board
-                //strResults = Support.ReceiveBoard(arrBoard);
-                //Support.PrintBoard(arrBoard);
+                strResults = Support.ReceiveBoard(arrBoard);
+                Support.PrintBoard(arrBoard);
             }
 
 
